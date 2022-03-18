@@ -1,0 +1,42 @@
+<div
+  class="container"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  @animation-triggers
+>
+  <div
+    class="card anim-slide--left"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    routerLink="planning"
+  >
+    <p class="txt">Planning</p>
+  </div>
+  <div
+    class="card anim-fade"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    routerLink="site"
+  >
+    <p class="txt">Site</p>
+  </div>
+  <div
+    class="card anim-fade anim-slide--right"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    routerLink="analysis"
+    id="analysis"
+    *ngIf="!isOver"
+  >
+    <p class="txt">Analysis</p>
+  </div>
+  <div
+    class="card anim-fade anim-slide--right"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    routerLink="table"
+    *ngIf="!isOver"
+  >
+    <p class="txt">Table</p>
+  </div>
+</div>

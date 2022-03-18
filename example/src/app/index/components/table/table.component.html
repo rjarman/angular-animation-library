@@ -1,0 +1,75 @@
+<div class="container2">
+  <div class="main-body sm">
+    <div class="mb-up">
+      <div class="em-out">
+        <mat-icon role="img">search</mat-icon>
+        <input matInput placeholder="Search form" type="text" />
+      </div>
+      <p>FORMS</p>
+      <p>Create and manage forms</p>
+      <div class="mb-up-btns">
+        <button
+          mat-raised-button
+          matRipple
+          routerLink="/question-builder/create"
+        >
+          ADD FORM
+        </button>
+      </div>
+    </div>
+    <div class="mb-low">
+      <div class="table" @animation-triggers>
+        <div class="tab-r-h anim-slide--left">
+          <div class="tab-c-1-h">Name</div>
+          <div class="tab-c-2-h asc" (click)="sort()">
+            Created on<span class="fa fa-sort-asc"></span>
+          </div>
+          <div class="tab-c-2-h asc" (click)="sort()">
+            Update on<span class="fa fa-sort-asc"></span>
+          </div>
+        </div>
+        <div style="overflow: hidden">
+          <div *ngFor="let datum of slicedData" class="anim-slide-stagger--down">
+            <a class="tab-r" routerLink="{{ datum.id }}/details">
+              <div class="tab-c-1">{{ datum.title }}</div>
+              <div class="tab-c-2">{{ datum.date }}</div>
+              <div class="tab-c-2">{{ datum.updateDate }}</div>
+            </a>
+          </div>
+        </div>
+        <div class="tab-r-f anim-slide--right">
+          <div class="tab-c-1-f">{{ data.length }} total</div>
+          <div class="tab-c-2-f">
+            <ul>
+              <li class="pager-btn">
+                <a href="javascript:void(0)" class="disabled"
+                  ><i class="fa fa-step-backward" (click)="backward()"></i
+                ></a>
+              </li>
+              <li class="pager-btn">
+                <a href="javascript:void(0)" class="disabled"
+                  ><i class="fa fa-chevron-left" (click)="left()"></i
+                ></a>
+              </li>
+              <li class="page-no disabled" *ngFor="let i of pager.slice">
+                <a href="javascript:void(0)" (click)="jumpPage($event)">{{
+                  i + 1
+                }}</a>
+              </li>
+              <li class="pager-btn">
+                <a href="javascript:void(0)"
+                  ><i class="fa fa-chevron-right" (click)="right()"></i
+                ></a>
+              </li>
+              <li class="pager-btn">
+                <a href="javascript:void(0)"
+                  ><i class="fa fa-step-forward" (click)="forward()"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

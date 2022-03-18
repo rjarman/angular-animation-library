@@ -1,0 +1,258 @@
+:host {
+  display: block;
+  padding: 20px;
+}
+
+.mat-icon {
+  color: #005ba9 !important;
+  vertical-align: middle;
+}
+
+.mat-toolbar-single-row {
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.mb-up {
+  > p {
+    font-family: poppins;
+    margin: 0;
+  }
+}
+
+.mb-up > p:first-child {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.mb-up > p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.mb-up-btns {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.mb-up-btns button {
+  background: #005ba9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.12),
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  height: 40px;
+  width: 128px;
+  color: #fff;
+  font-weight: 400;
+  font-family: poppins;
+  font-size: 14px;
+}
+
+.em-out {
+  height: 40px;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+  border-radius: 4px;
+  // width: 55%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  > mat-icon {
+    color: #969696 !important;
+    height: 24px;
+    width: 24px;
+    margin: 0 8px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  > input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+::ng-deep.mat-form-field-flex {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+::ng-deep.mat-form-field-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+::ng-deep.mat-form-field-infix {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  height: 40px !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+::ng-deep.mat-menu-panel {
+  min-width: 190px !important;
+
+  .mat-icon {
+    color: rgba(0, 0, 0, 0.54) !important;
+  }
+  button > span {
+    font-family: Poppins;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+}
+
+.mb-low {
+  > .table {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+  }
+
+  div {
+    text-align: left;
+  }
+
+  [class^="tab-r"] {
+    height: 56px;
+    min-height: 56px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  [class~="tab-r"],
+  .tab-r-f {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  [class~="tab-r"]:hover {
+    background-color: #fbf8f2;
+    cursor: pointer;
+  }
+
+  .tab-c-1-h,
+  .tab-c-2-h,
+  .tab-c-1,
+  .tab-c-2 {
+    width: 795px;
+    padding: 0 24px;
+  }
+
+  .tab-c-2-h {
+    cursor: pointer;
+  }
+
+  .tab-c-2-h > span {
+    line-height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 16px;
+  }
+
+  .tab-c-2-h > span::before {
+    content: "\f0de";
+  }
+
+  .tab-c-2-h.asc > span::before {
+    content: "\f0dd";
+  }
+
+  .tab-c-1-h,
+  .tab-c-2-h {
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .tab-c-1,
+  .tab-c-2 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #262626;
+    font-family: Poppins;
+  }
+
+  .tab-r-f {
+    padding: 0 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tab-c-1-f,
+  .tab-c-2-f {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.1px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+.tab-c-2-f {
+  > ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  li {
+    padding: 5px;
+  }
+
+  a {
+    width: 24px;
+    display: inline-block;
+    text-decoration: none;
+    color: #636363;
+    text-align: center;
+  }
+}
+
+.tab-c-2-f .page-no {
+  padding: 0;
+  a {
+    width: auto;
+    padding: 5px;
+  }
+}
+
+.tab-c-2-f .pager-btn.disabled a {
+  color: rgb(217, 219, 220);
+  cursor: not-allowed;
+}
+
+.page-no.disabled a {
+  color: rgb(217, 219, 220);
+}
+.page-no.disabled a:hover {
+  color: #636363;
+}

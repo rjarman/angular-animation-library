@@ -6,20 +6,12 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [
-    trigger('routerAnimState', [
-      transition('* => tablePage', [
-        style({ opacity: 0 }),
-        animate(3000, style({ opacity: 1 })),
-      ]),
-    ]),
-  ],
 })
 export class AppComponent {
-  title = 'FigmaToAngular';
+  title = 'Example';
 
   getRouterState(routerOutlet: RouterOutlet) {
     const routeData = routerOutlet.activatedRouteData['animation'];
-    return routeData
+    return routeData;
   }
 }

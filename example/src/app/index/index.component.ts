@@ -17,8 +17,5 @@ export class IndexComponent implements OnInit, AfterViewInit {
     analysisCard.addEventListener('mouseover', () => {
       this.isOver = true;
     });
-    // analysisCard.addEventListener('mouseleave', () => {
-    //   this.isOver = false;
-    // });
   }
 }

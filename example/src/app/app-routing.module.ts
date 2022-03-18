@@ -9,11 +9,6 @@ const routes: Routes = [
     component: IndexComponent,
   },
   {
-    path: 'desktop65',
-    loadChildren: () =>
-      import('./desktop65/desktop65.module').then((m) => m.DashboardModule),
-  },
-  {
     path: 'table',
     component: TableComponent,
     data: {animation: 'tablePage'}
